@@ -9,6 +9,8 @@ bibliography: references.bib
 
 # Abstract
 
+Introduce concept of design, describe its current state of misrecognition, and point to how DH is on it.
+
 # Introduction
 
 The data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice. These are defined below:
@@ -29,8 +31,21 @@ Among these areas, the least well understood is [design]{style="keyword"}.
 
 -   Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design. Because the latter tend to be identified with database management, which belongs to [systems]{style="keyword"}, design tends not to be recognized as a separate field.
 
-To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. We call machine processable information *data*. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling. Abstractly, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$.
+To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. We call machine processable information *data*. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling.
 
-Some key concepts
+Abstractly, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$. The following table describes some of the concepts and practices currently associated with each:
 
--   Informating
+-   HM
+
+    -   Visual modeling: ER, UML
+    -   Verbal classification: taxonomies, ontologies
+
+-   MH
+
+    -   Interactive visualization
+
+    -   Digital storytelling
+
+    # Theorization
+
+    -   Informating
