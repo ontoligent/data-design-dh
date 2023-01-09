@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Data, Design, and Digital Humanities"
+  reader-mode: true
+  author: "Rafael C. Alvarado"
+  date: "9 January 2023"
+  page-navigation: true
+  repo-url: https://github.com/ontoligent/data-design-dh
+
+  # downloads: [pdf]
+  chapters:
+    - index.qmd
+    - data-design-dh.qmd
+
+
+  page-footer:
+    left: |
+      Written by Rafael C. Alvarado with input from many colleagues at UVA's [School of Data Science](http://datascience.virginia.edu).
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+
+format:
+  html: 
+    code-link: true
+    callout-appearance: simple
+    author-meta: "Rafael C. Alvarado"
+    number-sections: false
+    fig-align: "center"
+
+  # pdf:
+  #   documentclass: scrreport
+  # epub:
+  #   cover-image: cover.png    
