@@ -27,11 +27,11 @@ For purposes of this essay, it is helpful to recall that the data science pipeli
 
 # Design
 
-Among these areas, the least well understood is [design]{style="keyword"}.
+Among these areas, the least well understood is [design]{class="keyword"}.
 
 -   The area of design encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment).
 
--   Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design. Because the latter tend to be identified with database management, which belongs to [systems]{style="keyword"}, design tends not to be recognized as a separate field.
+-   Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design. Because the latter tend to be identified with database management, which belongs to [systems]{class="keyword"}, design tends not to be recognized as a separate field.
 
 To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. We call machine processable information *data*. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling.
 
