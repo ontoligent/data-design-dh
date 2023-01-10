@@ -15,7 +15,6 @@ book:
     - index.qmd
     - introduction.qmd
 
-
   page-footer:
     left: |
       Written by Rafael C. Alvarado with input from many colleagues at UVA's [School of Data Science](http://datascience.virginia.edu).
