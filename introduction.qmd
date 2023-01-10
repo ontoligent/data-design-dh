@@ -7,23 +7,25 @@ jupyter: python3
 bibliography: references.bib
 ---
 
-# Abstract
-
-Introduce concept of design, describe its current state of misrecognition, and point to how DH is on it.
-
 # Introduction
 
-The data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice. These are defined below:
+The data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice.
 
-1.  Analytics
-2.  Systems
-3.  Design
-4.  Value
-5.  Practice
+|               |                                                                                            |
+|---------------|--------------------------------------------------------------------------------------------|
+| **Analytics** | Statistical modeling, algorithmic modeling, simulations, pattern discovery, data reduction |
+| **Systems**   | Programming, devops, ML ops, cloud computing, high-performance computing                   |
+| **Design**    | Data modeling, ontology, visualization, data storytelling                                  |
+| **Value**     | Ethics, scientific research design, business, value proposition, strategic planning        |
+| **Practice**  | Project management, pipeline management, connection to domain knowledge                    |
 
-These areas are elements of an invariant model derived from the the image of the pipeline that dominates discourse about the definition of data science. For a theoretical justification and more complete description of this model, see [@alvarado2022].
+: The Five Areas of Data Science
+
+These areas are elements of an invariant model derived from the image of the pipeline that dominates discourse about the definition of data science. For a theoretical justification and more complete description of this model, see [@alvarado2022].
 
 For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas.
+
+# Design
 
 Among these areas, the least well understood is [design]{style="keyword"}.
 
@@ -38,14 +40,45 @@ Abstractly, we may represent these moments as $H \rightarrow M$ and $M \rightarr
 -   HM
 
     -   Visual modeling: ER, UML
-    -   Verbal classification: taxonomies, ontologies
+    -   Verbal classification: taxonomies, ontologies, Knowledge Representation
+    -   Domain-specific models (e.g. bioinformatics, digital humanities, linguistics, etc.)
+    -   Operationalization (O16N)
 
 -   MH
 
     -   Interactive visualization
-
     -   Digital storytelling
 
-    # Theorization
+# Theorization
 
-    -   Informating
+Human-computer interaction
+
+-   Licklider
+-   Crawford
+-   Naur
+-   Suchman
+-   Zuboff (Informating)
+-   Latour
+-   Manovich
+
+# Digital Humanities
+
+-   Unsworth and KR
+-   Review of literature in major journals
+
+# Areas
+
+## Models of Text
+
+## Models and Categories
+
+## Models of Culture and History
+
+-   Schema
+-   HEML
+
+## Visualization of Cultural Things
+
+## Genres of Visualization
+
+## Critical Evaluation of Methods
