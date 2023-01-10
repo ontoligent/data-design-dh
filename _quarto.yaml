@@ -31,10 +31,7 @@ format:
     author-meta: "Rafael C. Alvarado"
     number-sections: false
     fig-align: "center"
-    theme: 
-      - journal
-      - custom.css
-
+    css: custom.css
 
   # pdf:
   #   documentclass: scrreport
