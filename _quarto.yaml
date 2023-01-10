@@ -23,6 +23,7 @@ book:
 
 bibliography: references.bib
 
+
 format:
   html: 
     code-link: true
@@ -30,6 +31,10 @@ format:
     author-meta: "Rafael C. Alvarado"
     number-sections: false
     fig-align: "center"
+    theme: 
+      - journal
+      - custom.css
+
 
   # pdf:
   #   documentclass: scrreport
