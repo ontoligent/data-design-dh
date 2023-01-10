@@ -13,7 +13,7 @@ book:
   # downloads: [pdf]
   chapters:
     - index.qmd
-    - data-design-dh.qmd
+    - introduction.qmd
 
 
   page-footer:
@@ -21,6 +21,8 @@ book:
       Written by Rafael C. Alvarado with input from many colleagues at UVA's [School of Data Science](http://datascience.virginia.edu).
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
+
+bibliography: references.bib
 
 format:
   html: 
