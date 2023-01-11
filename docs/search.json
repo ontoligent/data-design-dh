@@ -9,49 +9,49 @@
   {
     "objectID": "introduction.html",
     "href": "introduction.html",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "",
-    "text": "Introduction\nThe data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice.\nThese areas are elements of an invariant model derived from the image of the pipeline that dominates discourse about the definition of data science. For a theoretical justification and more complete description of this model, see (Alvarado 2022).\nFor purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an arc, in which the pre- and post-processing segments mirror each other and combine to form structural areas.\nAmong these areas, the least well understood is design.\nTo understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. We call machine processable information data. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling.\nAbstractly, we may represent these moments as \\(H \\rightarrow M\\) and \\(M \\rightarrow H\\). The following table describes some of the concepts and practices currently associated with each:\nHuman-computer interaction"
+    "text": "Introduction\nThe data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice. The table below gives a sample of activities associated with each area.\nThese areas are elements of an invariant model derived from the image of the pipeline that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see (Alvarado 2022). For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an arc, in which the pre- and post-processing segments mirror each other and combine to form structural areas.\nAmong the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field.\nTo understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information data.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.\nFormally, we may represent these moments as \\(H \\rightarrow M\\) and \\(M \\rightarrow H\\). The following table describes some of the concepts and practices currently associated with each:\nHuman-computer interaction"
   },
   {
     "objectID": "introduction.html#models-of-text",
     "href": "introduction.html#models-of-text",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Models of Text",
     "text": "Models of Text"
   },
   {
     "objectID": "introduction.html#models-and-categories",
     "href": "introduction.html#models-and-categories",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Models and Categories",
     "text": "Models and Categories"
   },
   {
     "objectID": "introduction.html#models-of-culture-and-history",
     "href": "introduction.html#models-of-culture-and-history",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Models of Culture and History",
     "text": "Models of Culture and History\n\nSchema\nHEML"
   },
   {
     "objectID": "introduction.html#visualization-of-cultural-things",
     "href": "introduction.html#visualization-of-cultural-things",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Visualization of Cultural Things",
     "text": "Visualization of Cultural Things"
   },
   {
     "objectID": "introduction.html#genres-of-visualization",
     "href": "introduction.html#genres-of-visualization",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Genres of Visualization",
     "text": "Genres of Visualization"
   },
   {
     "objectID": "introduction.html#critical-evaluation-of-methods",
     "href": "introduction.html#critical-evaluation-of-methods",
-    "title": "Data, Design, and Digital Humanities",
+    "title": "Introduction",
     "section": "Critical Evaluation of Methods",
     "text": "Critical Evaluation of Methods\n\n\n\n\nAlvarado, Rafael C. 2022. “The 4+1 Model of Data Science.” https://ontoligent.github.io/four-plus-one-model/."
   }

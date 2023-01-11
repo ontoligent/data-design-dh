@@ -1,5 +1,5 @@
 ---
-title: "Data, Design, and Digital Humanities"
+title: "Introduction"
 author: "R. C. Alvarado"
 format: html
 editor: visual
@@ -9,45 +9,50 @@ bibliography: references.bib
 
 # Introduction
 
-The data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice.
+The data science body of knowledge ([DSBOK]{.acronym}) may be divided into five broad areas: [analytics]{.keyword}, [systems]{.keyword}, [design]{.keyword}, [value]{.keyword}, and [practice]{.keyword}. The table below gives a sample of activities associated with each area.
 
-|               |                                                                                                  |
-|---------------|---------------------------------------------------------------------------|
++---------------+--------------------------------------------------------------------------------------------------+
+| AREA          | ACTIVITY                                                                                         |
++===============+==================================================================================================+
 | **Analytics** | Statistical modeling, algorithmic modeling, simulations, pattern discovery, data reduction, etc. |
-| **Systems**   | Programming, devops, ML ops, cloud computing, high-performance computing, etc.                   |
-| **Design**    | Data modeling, ontology, visualization, data storytelling, etc.                                  |
-| **Value**     | Ethics, scientific research design, business, value proposition, strategic planning, etc.        |
-| **Practice**  | Project management, pipeline management, connection to domain knowledge, etc.                    |
++---------------+--------------------------------------------------------------------------------------------------+
+| **Systems**   | Programming, software development, ML ops, cloud computing, high-performance computing, etc.     |
++---------------+--------------------------------------------------------------------------------------------------+
+| **Design**    | Data modeling, ontology making, visualization, data storytelling, etc.                           |
++---------------+--------------------------------------------------------------------------------------------------+
+| **Value**     | Ethics, scientific research formulation, business value framing, strategic planning, etc.        |
++---------------+--------------------------------------------------------------------------------------------------+
+| **Practice**  | Project management, cross-functional team building, connection to domain knowledge, etc.         |
++---------------+--------------------------------------------------------------------------------------------------+
 
 : The Five Areas of Data Science
 
-These areas are elements of an invariant model derived from the image of the pipeline that dominates discourse about the definition of data science. For a theoretical justification and more complete description of this model, see [@alvarado2022].
+These areas are elements of an invariant model derived from the image of the *pipeline* that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see [@alvarado2022]. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas.
 
-For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas.
+![The Pipeline of Data Science](media/ds-pipeline.png){fig-align="center"}
+
+![The Pipeline as Arc](media/pipeline-as-arc.png){fig-align="center"}
 
 # Design
 
-Among these areas, the least well understood is [design]{class="keyword"}.
+Among the areas of data science, the least well understood is [design]{.keyword}. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction ([HCI]{style="acronym"}), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to [systems]{.keyword}. Because of these disparate associations, design tends not to be recognized as a separate field.
 
--   The area of design encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment).
+To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. (We call machine processable information *data*.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.
 
--   Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design. Because the latter tend to be identified with database management, which belongs to [systems]{class="keyword"}, design tends not to be recognized as a separate field.
+Formally, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$. The following table describes some of the concepts and practices currently associated with each:
 
-To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. We call machine processable information *data*. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling.
++-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Pre-processing: $H \rightarrow M$                                                                               | Post-processing: $M \rightarrow H$                                                                                              |
++=================================================================================================================+=================================================================================================================================+
+| [Visual modeling]{.underline}: E-R diagrams, UML (more generally), etc.                                         | [Interactive visualization]{.underline}: Dashboards, user-facing databases, etc.                                                |
+|                                                                                                                 |                                                                                                                                 |
+| [Verbal classification]{.underline}: taxonomies and ontologies (RDF, SKOS, OWL), Knowledge Representation, etc. | [Static visualization]{.underline}: infographics, posters, embedded figures and charts, etc.                                    |
+|                                                                                                                 |                                                                                                                                 |
+| [Domain-specific models]{.underline}: vector space representations, protein models, text models, etc.           | [\                                                                                                                              |
+|                                                                                                                 | Digital storytelling]{.underline}: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc. |
++-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
-Abstractly, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$. The following table describes some of the concepts and practices currently associated with each:
-
--   HM
-
-    -   Visual modeling: ER, UML
-    -   Verbal classification: taxonomies, ontologies, Knowledge Representation
-    -   Domain-specific models (e.g. bioinformatics, digital humanities, linguistics, etc.)
-    -   Operationalization (O16N)
-
--   MH
-
-    -   Interactive visualization
-    -   Digital storytelling
+: Two Moments of Design
 
 # Theorization
 

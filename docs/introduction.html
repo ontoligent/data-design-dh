@@ -8,7 +8,7 @@
 
 <meta name="author" content="Rafael C. Alvarado">
 
-<title>Data, Design, and Digital Humanities - 2&nbsp; Data, Design, and Digital Humanities</title>
+<title>Data, Design, and Digital Humanities - 2&nbsp; Introduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Data, Design, and Digital Humanities</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Introduction</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -129,7 +129,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Data, Design, and Digital Humanities</span></a>
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introduction</span></a>
   </div>
 </li>
     </ul>
@@ -162,7 +162,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-title">Data, Design, and Digital Humanities</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-title">Introduction</span></h1>
 </div>
 
 
@@ -185,13 +185,19 @@ div.csl-indent {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice.</p>
+<p>The data science body of knowledge (<span class="acronym">DSBOK</span>) may be divided into five broad areas: <span class="keyword">analytics</span>, <span class="keyword">systems</span>, <span class="keyword">design</span>, <span class="keyword">value</span>, and <span class="keyword">practice</span>. The table below gives a sample of activities associated with each area.</p>
 <table class="table">
 <caption>The Five Areas of Data Science</caption>
 <colgroup>
-<col style="width: 16%">
-<col style="width: 83%">
+<col style="width: 13%">
+<col style="width: 86%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>AREA</th>
+<th>ACTIVITY</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td><strong>Analytics</strong></td>
@@ -199,48 +205,65 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td><strong>Systems</strong></td>
-<td>Programming, devops, ML ops, cloud computing, high-performance computing, etc.</td>
+<td>Programming, software development, ML ops, cloud computing, high-performance computing, etc.</td>
 </tr>
 <tr class="odd">
 <td><strong>Design</strong></td>
-<td>Data modeling, ontology, visualization, data storytelling, etc.</td>
+<td>Data modeling, ontology making, visualization, data storytelling, etc.</td>
 </tr>
 <tr class="even">
 <td><strong>Value</strong></td>
-<td>Ethics, scientific research design, business, value proposition, strategic planning, etc.</td>
+<td>Ethics, scientific research formulation, business value framing, strategic planning, etc.</td>
 </tr>
 <tr class="odd">
 <td><strong>Practice</strong></td>
-<td>Project management, pipeline management, connection to domain knowledge, etc.</td>
+<td>Project management, cross-functional team building, connection to domain knowledge, etc.</td>
 </tr>
 </tbody>
 </table>
-<p>These areas are elements of an invariant model derived from the image of the pipeline that dominates discourse about the definition of data science. For a theoretical justification and more complete description of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>.</p>
-<p>For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas.</p>
+<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/ds-pipeline.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Pipeline of Data Science</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/pipeline-as-arc.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Pipeline as Arc</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="design" class="level1">
 <h1>Design</h1>
-<p>Among these areas, the least well understood is <span class="keyword">design</span>.</p>
-<ul>
-<li><p>The area of design encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment).</p></li>
-<li><p>Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design. Because the latter tend to be identified with database management, which belongs to <span class="keyword">systems</span>, design tends not to be recognized as a separate field.</p></li>
-</ul>
-<p>To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. We call machine processable information <em>data</em>. On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into humanly intelligible forms through the work of visualization and digital storytelling.</p>
-<p>Abstractly, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span>. The following table describes some of the concepts and practices currently associated with each:</p>
-<ul>
-<li><p>HM</p>
-<ul>
-<li>Visual modeling: ER, UML</li>
-<li>Verbal classification: taxonomies, ontologies, Knowledge Representation</li>
-<li>Domain-specific models (e.g.&nbsp;bioinformatics, digital humanities, linguistics, etc.)</li>
-<li>Operationalization (O16N)</li>
-</ul></li>
-<li><p>MH</p>
-<ul>
-<li>Interactive visualization</li>
-<li>Digital storytelling</li>
-</ul></li>
-</ul>
+<p>Among the areas of data science, the least well understood is <span class="keyword">design</span>. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span style="acronym">HCI</span>), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to <span class="keyword">systems</span>. Because of these disparate associations, design tends not to be recognized as a separate field.</p>
+<p>To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information <em>data</em>.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.</p>
+<p>Formally, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span>. The following table describes some of the concepts and practices currently associated with each:</p>
+<table class="table">
+<caption>Two Moments of Design</caption>
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pre-processing: <span class="math inline">\(H \rightarrow M\)</span></th>
+<th>Post-processing: <span class="math inline">\(M \rightarrow H\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><u>Visual modeling</u>: E-R diagrams, UML (more generally), etc.</p>
+<p><u>Verbal classification</u>: taxonomies and ontologies (RDF, SKOS, OWL), Knowledge Representation, etc.</p>
+<p><u>Domain-specific models</u>: vector space representations, protein models, text models, etc.</p></td>
+<td><p><u>Interactive visualization</u>: Dashboards, user-facing databases, etc.</p>
+<p><u>Static visualization</u>: infographics, posters, embedded figures and charts, etc.</p>
+<p><u><br>
+Digital storytelling</u>: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="theorization" class="level1">
 <h1>Theorization</h1>

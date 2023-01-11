@@ -3,6 +3,10 @@
 /*-- scss:rules --*/
 
 .keyword {
-    /* font-size: 90%; */
     font-variant: small-caps;
+}
+
+.acronym {
+    font-size: 88%;
+    letter-spacing: 110%;
 }
