@@ -27,11 +27,7 @@ The data science body of knowledge ([DSBOK]{.acronym}) may be divided into five 
 
 : The Five Areas of Data Science
 
-These areas are elements of an invariant model derived from the image of the *pipeline* that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see [@alvarado2022]. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas.
-
-![The Pipeline of Data Science](media/ds-pipeline.png){fig-align="center"}
-
-![The Pipeline as Arc](media/pipeline-as-arc.png){fig-align="center"}
+These areas are elements of an invariant model derived from the image of the *pipeline* that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see [@alvarado2022]. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see [appendix.html](appendix.html "Appendix")).
 
 # Design
 
@@ -39,10 +35,10 @@ Among the areas of data science, the least well understood is [design]{.keyword}
 
 To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. (We call machine processable information *data*.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.
 
-Formally, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$. The following table describes some of the concepts and practices currently associated with each:
+Formally, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$ (or $H \leftarrow M$). The following table describes some of the artifacts and practices currently associated with each:
 
 +-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| Pre-processing: $H \rightarrow M$                                                                               | Post-processing: $M \rightarrow H$                                                                                              |
+| Pre-processing ($H \rightarrow M$)                                                                              | Post-processing ($M \rightarrow H$)                                                                                             |
 +=================================================================================================================+=================================================================================================================================+
 | [Visual modeling]{.underline}: E-R diagrams, UML (more generally), etc.                                         | [Interactive visualization]{.underline}: Dashboards, user-facing databases, etc.                                                |
 |                                                                                                                 |                                                                                                                                 |
@@ -53,6 +49,10 @@ Formally, we may represent these moments as $H \rightarrow M$ and $M \rightarrow
 +-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 : Two Moments of Design
+
+What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional *representation*. These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e. to non-specialist stakeholders and to users of data products.
+
+# Data as Representation
 
 # Theorization
 

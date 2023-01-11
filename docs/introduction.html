@@ -50,6 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./appendix.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -132,6 +133,11 @@ div.csl-indent {
   <a href="./introduction.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introduction</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -143,6 +149,7 @@ div.csl-indent {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
+  <li><a href="#data-as-representation" id="toc-data-as-representation" class="nav-link" data-scroll-target="#data-as-representation">Data as Representation</a></li>
   <li><a href="#theorization" id="toc-theorization" class="nav-link" data-scroll-target="#theorization">Theorization</a></li>
   <li><a href="#digital-humanities" id="toc-digital-humanities" class="nav-link" data-scroll-target="#digital-humanities">Digital Humanities</a></li>
   <li><a href="#areas" id="toc-areas" class="nav-link" data-scroll-target="#areas">Areas</a>
@@ -221,25 +228,13 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/ds-pipeline.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The Pipeline of Data Science</figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/pipeline-as-arc.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The Pipeline as Arc</figcaption><p></p>
-</figure>
-</div>
+<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">appendix.html</a>).</p>
 </section>
 <section id="design" class="level1">
 <h1>Design</h1>
 <p>Among the areas of data science, the least well understood is <span class="keyword">design</span>. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span style="acronym">HCI</span>), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to <span class="keyword">systems</span>. Because of these disparate associations, design tends not to be recognized as a separate field.</p>
 <p>To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information <em>data</em>.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.</p>
-<p>Formally, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span>. The following table describes some of the concepts and practices currently associated with each:</p>
+<p>Formally, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span> (or <span class="math inline">\(H \leftarrow M\)</span>). The following table describes some of the artifacts and practices currently associated with each:</p>
 <table class="table">
 <caption>Two Moments of Design</caption>
 <colgroup>
@@ -248,8 +243,8 @@ div.csl-indent {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Pre-processing: <span class="math inline">\(H \rightarrow M\)</span></th>
-<th>Post-processing: <span class="math inline">\(M \rightarrow H\)</span></th>
+<th>Pre-processing (<span class="math inline">\(H \rightarrow M\)</span>)</th>
+<th>Post-processing (<span class="math inline">\(M \rightarrow H\)</span>)</th>
 </tr>
 </thead>
 <tbody>
@@ -264,6 +259,10 @@ Digital storytelling</u>: integration of visual and verbal elements into narrati
 </tr>
 </tbody>
 </table>
+<p>What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional <em>representation</em>. These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e.&nbsp;to non-specialist stakeholders and to users of data products.</p>
+</section>
+<section id="data-as-representation" class="level1">
+<h1>Data as Representation</h1>
 </section>
 <section id="theorization" class="level1">
 <h1>Theorization</h1>
@@ -459,6 +458,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./appendix.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Appendix</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

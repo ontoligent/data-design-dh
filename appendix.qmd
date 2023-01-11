@@ -1,0 +1,12 @@
+---
+title: "Appendix"
+author: "R. C. Alvarado"
+editor: visual
+jupyter: python3
+---
+
+# Appendix
+
+![The Pipeline of Data Science](media/ds-pipeline.png){alt="The Pipeline of Data Science" fig-align="center"}
+
+![The Pipeline as Arc](media/pipeline-as-arc.png){alt="The Pipeline as Arc" fig-align="center"}
