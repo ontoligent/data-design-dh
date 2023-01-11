@@ -27,43 +27,65 @@ The data science body of knowledge ([DSBOK]{.acronym}) may be divided into five 
 
 : The Five Areas of Data Science
 
-These areas are elements of an invariant model derived from the image of the *pipeline* that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see [@alvarado2022]. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see [appendix.html](appendix.html "Appendix")).
+These areas are elements of an invariant model derived from the image of the *pipeline* that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see [@alvarado2022]. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an *arc*, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see [Appendix](appendix.html "Appendix")).
 
 # Design
 
-Among the areas of data science, the least well understood is [design]{.keyword}. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction ([HCI]{style="acronym"}), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to [systems]{.keyword}. Because of these disparate associations, design tends not to be recognized as a separate field.
+Among the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction ([HCI]{.acronym}), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.
 
-To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. (We call machine processable information *data*.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.
+To understand design on its own terms, consider the communicative relationship between humans and computational machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans --- for example, in textual or analog form --- into forms that can be processed by machines. (We call machine processable information *data*; more on this below.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.
 
 Formally, we may represent these moments as $H \rightarrow M$ and $M \rightarrow H$ (or $H \leftarrow M$). The following table describes some of the artifacts and practices currently associated with each:
 
-+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| Pre-processing ($H \rightarrow M$)                                                                              | Post-processing ($M \rightarrow H$)                                                                                             |
-+=================================================================================================================+=================================================================================================================================+
-| [Visual modeling]{.underline}: E-R diagrams, UML (more generally), etc.                                         | [Interactive visualization]{.underline}: Dashboards, user-facing databases, etc.                                                |
-|                                                                                                                 |                                                                                                                                 |
-| [Verbal classification]{.underline}: taxonomies and ontologies (RDF, SKOS, OWL), Knowledge Representation, etc. | [Static visualization]{.underline}: infographics, posters, embedded figures and charts, etc.                                    |
-|                                                                                                                 |                                                                                                                                 |
-| [Domain-specific models]{.underline}: vector space representations, protein models, text models, etc.           | [\                                                                                                                              |
-|                                                                                                                 | Digital storytelling]{.underline}: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc. |
-+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Pre-processing ($H \rightarrow M$)                                                                                   | Post-processing ($M \rightarrow H$)                                                                                              |
++======================================================================================================================+==================================================================================================================================+
+| [Visual modeling]{.underline}: E-R diagrams, [UML](https://www.uml.org/) (more generally), etc.                      | [Interactive visualization]{.underline}: Dashboards, user-facing databases, etc.                                                 |
+|                                                                                                                      |                                                                                                                                  |
+| [Verbal classification]{.underline}: taxonomies and ontologies (e.g. RDF, SKOS, OWL), Knowledge Representation, etc. | [Static visualization]{.underline}: infographics, posters, embedded figures and charts, etc.                                     |
+|                                                                                                                      |                                                                                                                                  |
+| [Domain-specific models]{.underline}: vector space representations, protein models, text models, etc.                | [Digital storytelling]{.underline}: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc. |
+|                                                                                                                      |                                                                                                                                  |
+|                                                                                                                      | [Data product design]{.underline}: user interface and interaction design of data-driven software products for end-users, etc.    |
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 : Two Moments of Design
 
-What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional *representation*. These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e. to non-specialist stakeholders and to users of data products.
+What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional *representation* that mediates between cognitive structures of humans and those of machines.[^introduction-1] These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e. to non-specialist stakeholders and to users of data products. In both cases, however, the work is focused on a form of representation that mediates between the strict demands of mechanical processing and the more labile requirements of human cognition.
+
+[^introduction-1]: The idea that machines may be thought of having *cognition* is implied by the field of artificial intelligence. For a good theorization of machine (and other non-human) forms of cognition, see [@hayles2017].
+
+Given that design is focused on representation, what are some specific characteristics of representation in this context? A full answer to this question is not possible here for two reasons. First, the topic itself is broad and will eventially require volumes for a systematic treatment (as we can expect with any well-developed idea within a body of knowledge). Second, however, as noted the topic is under-theorized. Although some important contributions have been made to the field, especially from the field of [HCI]{.acroynym}, it remains understudied, especially in the uniform manner implied by the 4+1 model of data science. Here we may note the following features shared by both the pre- and post-processing moments of design.
+
+-   Formal, e.g. they follow a grammar
+-   Non-quantitative
+-   Quasi-logical
+-   Aesthetic
+-   Reductive
+-   Abstract
+-   Double-voiced: Explicit in the design of SGML (and by descent XML)
+-   Play: The area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task.
 
 # Data as Representation
 
+A special case of $H \rightarrow M$ representation is *data*, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called "structured information," where structure typically means *tabular* structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.
+
 # Theorization
 
-Human-computer interaction
+-   Frye!
 
 -   Licklider
+
 -   Crawford
+
 -   Naur
+
 -   Suchman
+
 -   Zuboff (Informating)
+
 -   Latour
+
 -   Manovich
 
 # Digital Humanities
@@ -87,3 +109,11 @@ Human-computer interaction
 ## Genres of Visualization
 
 ## Critical Evaluation of Methods
+
+# Concepts
+
+## Data
+
+## Impedance
+
+## Transductive Plasma

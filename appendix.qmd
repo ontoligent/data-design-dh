@@ -7,6 +7,8 @@ jupyter: python3
 
 # Appendix
 
+## Summary Derivation of the 4+1 Model of Data Science
+
 ![The Pipeline of Data Science](media/ds-pipeline.png){alt="The Pipeline of Data Science" fig-align="center"}
 
 ![The Pipeline as Arc](media/pipeline-as-arc.png){alt="The Pipeline as Arc" fig-align="center"}

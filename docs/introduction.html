@@ -161,6 +161,12 @@ div.csl-indent {
   <li><a href="#genres-of-visualization" id="toc-genres-of-visualization" class="nav-link" data-scroll-target="#genres-of-visualization">Genres of Visualization</a></li>
   <li><a href="#critical-evaluation-of-methods" id="toc-critical-evaluation-of-methods" class="nav-link" data-scroll-target="#critical-evaluation-of-methods">Critical Evaluation of Methods</a></li>
   </ul></li>
+  <li><a href="#concepts" id="toc-concepts" class="nav-link" data-scroll-target="#concepts">Concepts</a>
+  <ul class="collapse">
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#impedance" id="toc-impedance" class="nav-link" data-scroll-target="#impedance">Impedance</a></li>
+  <li><a href="#transductive-plasma" id="toc-transductive-plasma" class="nav-link" data-scroll-target="#transductive-plasma">Transductive Plasma</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -228,19 +234,15 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">appendix.html</a>).</p>
+<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">Appendix</a>).</p>
 </section>
 <section id="design" class="level1">
 <h1>Design</h1>
-<p>Among the areas of data science, the least well understood is <span class="keyword">design</span>. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span style="acronym">HCI</span>), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to <span class="keyword">systems</span>. Because of these disparate associations, design tends not to be recognized as a separate field.</p>
-<p>To understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information <em>data</em>.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.</p>
+<p>Among the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span class="acronym">HCI</span>), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.</p>
+<p>To understand design on its own terms, consider the communicative relationship between humans and computational machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information <em>data</em>; more on this below.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.</p>
 <p>Formally, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span> (or <span class="math inline">\(H \leftarrow M\)</span>). The following table describes some of the artifacts and practices currently associated with each:</p>
 <table class="table">
 <caption>Two Moments of Design</caption>
-<colgroup>
-<col style="width: 46%">
-<col style="width: 53%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Pre-processing (<span class="math inline">\(H \rightarrow M\)</span>)</th>
@@ -249,32 +251,44 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><u>Visual modeling</u>: E-R diagrams, UML (more generally), etc.</p>
-<p><u>Verbal classification</u>: taxonomies and ontologies (RDF, SKOS, OWL), Knowledge Representation, etc.</p>
+<td><p><u>Visual modeling</u>: E-R diagrams, <a href="https://www.uml.org/">UML</a> (more generally), etc.</p>
+<p><u>Verbal classification</u>: taxonomies and ontologies (e.g.&nbsp;RDF, SKOS, OWL), Knowledge Representation, etc.</p>
 <p><u>Domain-specific models</u>: vector space representations, protein models, text models, etc.</p></td>
 <td><p><u>Interactive visualization</u>: Dashboards, user-facing databases, etc.</p>
 <p><u>Static visualization</u>: infographics, posters, embedded figures and charts, etc.</p>
-<p><u><br>
-Digital storytelling</u>: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc.</p></td>
+<p><u>Digital storytelling</u>: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc.</p>
+<p><u>Data product design</u>: user interface and interaction design of data-driven software products for end-users, etc.</p></td>
 </tr>
 </tbody>
 </table>
-<p>What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional <em>representation</em>. These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e.&nbsp;to non-specialist stakeholders and to users of data products.</p>
+<p>What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional <em>representation</em> that mediates between cognitive structures of humans and those of machines.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e.&nbsp;to non-specialist stakeholders and to users of data products. In both cases, however, the work is focused on a form of representation that mediates between the strict demands of mechanical processing and the more labile requirements of human cognition.</p>
+<p>Given that design is focused on representation, what are some specific characteristics of representation in this context? A full answer to this question is not possible here for two reasons. First, the topic itself is broad and will eventially require volumes for a systematic treatment (as we can expect with any well-developed idea within a body of knowledge). Second, however, as noted the topic is under-theorized. Although some important contributions have been made to the field, especially from the field of <span class="acroynym">HCI</span>, it remains understudied, especially in the uniform manner implied by the 4+1 model of data science. Here we may note the following features shared by both the pre- and post-processing moments of design.</p>
+<ul>
+<li>Formal, e.g.&nbsp;they follow a grammar</li>
+<li>Non-quantitative</li>
+<li>Quasi-logical</li>
+<li>Aesthetic</li>
+<li>Reductive</li>
+<li>Abstract</li>
+<li>Double-voiced: Explicit in the design of SGML (and by descent XML)</li>
+<li>Play: The area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task.</li>
+</ul>
 </section>
 <section id="data-as-representation" class="level1">
 <h1>Data as Representation</h1>
+<p>A special case of <span class="math inline">\(H \rightarrow M\)</span> representation is <em>data</em>, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called “structured information,” where structure typically means <em>tabular</em> structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.</p>
 </section>
 <section id="theorization" class="level1">
 <h1>Theorization</h1>
-<p>Human-computer interaction</p>
 <ul>
-<li>Licklider</li>
-<li>Crawford</li>
-<li>Naur</li>
-<li>Suchman</li>
-<li>Zuboff (Informating)</li>
-<li>Latour</li>
-<li>Manovich</li>
+<li><p>Frye!</p></li>
+<li><p>Licklider</p></li>
+<li><p>Crawford</p></li>
+<li><p>Naur</p></li>
+<li><p>Suchman</p></li>
+<li><p>Zuboff (Informating)</p></li>
+<li><p>Latour</p></li>
+<li><p>Manovich</p></li>
 </ul>
 </section>
 <section id="digital-humanities" class="level1">
@@ -307,14 +321,35 @@ Digital storytelling</u>: integration of visual and verbal elements into narrati
 </section>
 <section id="critical-evaluation-of-methods" class="level2">
 <h2 class="anchored" data-anchor-id="critical-evaluation-of-methods">Critical Evaluation of Methods</h2>
+</section>
+</section>
+<section id="concepts" class="level1">
+<h1>Concepts</h1>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+</section>
+<section id="impedance" class="level2">
+<h2 class="anchored" data-anchor-id="impedance">Impedance</h2>
+</section>
+<section id="transductive-plasma" class="level2">
+<h2 class="anchored" data-anchor-id="transductive-plasma">Transductive Plasma</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-alvarado2022" class="csl-entry" role="doc-biblioentry">
 Alvarado, Rafael C. 2022. <span>“The 4+1 Model of Data Science.”</span> <a href="https://ontoligent.github.io/four-plus-one-model/">https://ontoligent.github.io/four-plus-one-model/</a>.
 </div>
+<div id="ref-hayles2017" class="csl-entry" role="doc-biblioentry">
+Hayles, N. Katherine. 2017. <em>Unthought: The Power of the Cognitive Nonconscious</em>. University of Chicago Press. <a href="https://doi.org/10.7208/9780226447919">https://doi.org/10.7208/9780226447919</a>.
+</div>
 </div>
 </section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The idea that machines may be thought of having <em>cognition</em> is implied by the field of artificial intelligence. For a good theorization of machine (and other non-human) forms of cognition, see <span class="citation" data-cites="hayles2017">(<a href="#ref-hayles2017" role="doc-biblioref">Hayles 2017</a>)</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->

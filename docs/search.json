@@ -11,7 +11,7 @@
     "href": "introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nThe data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice. The table below gives a sample of activities associated with each area.\nThese areas are elements of an invariant model derived from the image of the pipeline that has dominated discourse about the definition of data science for decades. For a theoretical justification and brief historical overview of this model, see (Alvarado 2022). For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an arc, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see appendix.html).\nAmong the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (HCI), but also the fields data modeling and ontology design, which tend to be associated with with database management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field.\nTo understand design on its own terms, consider the communicative relationship between humans and machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information data.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.\nFormally, we may represent these moments as \\(H \\rightarrow M\\) and \\(M \\rightarrow H\\) (or \\(H \\leftarrow M\\)). The following table describes some of the artifacts and practices currently associated with each:\nWhat is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional representation. These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e. to non-specialist stakeholders and to users of data products.\nHuman-computer interaction"
+    "text": "Introduction\nThe data science body of knowledge (DSBOK) may be divided into five broad areas: analytics, systems, design, value, and practice. The table below gives a sample of activities associated with each area.\nThese areas are elements of an invariant model derived from the image of the pipeline that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see (Alvarado 2022). For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an arc, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see Appendix).\nAmong the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (HCI), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.\nTo understand design on its own terms, consider the communicative relationship between humans and computational machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information data; more on this below.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.\nFormally, we may represent these moments as \\(H \\rightarrow M\\) and \\(M \\rightarrow H\\) (or \\(H \\leftarrow M\\)). The following table describes some of the artifacts and practices currently associated with each:\nWhat is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional representation that mediates between cognitive structures of humans and those of machines.1 These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e. to non-specialist stakeholders and to users of data products. In both cases, however, the work is focused on a form of representation that mediates between the strict demands of mechanical processing and the more labile requirements of human cognition.\nGiven that design is focused on representation, what are some specific characteristics of representation in this context? A full answer to this question is not possible here for two reasons. First, the topic itself is broad and will eventially require volumes for a systematic treatment (as we can expect with any well-developed idea within a body of knowledge). Second, however, as noted the topic is under-theorized. Although some important contributions have been made to the field, especially from the field of HCI, it remains understudied, especially in the uniform manner implied by the 4+1 model of data science. Here we may note the following features shared by both the pre- and post-processing moments of design.\nA special case of \\(H \\rightarrow M\\) representation is data, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called “structured information,” where structure typically means tabular structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation."
   },
   {
     "objectID": "introduction.html#models-of-text",
@@ -53,13 +53,41 @@
     "href": "introduction.html#critical-evaluation-of-methods",
     "title": "Introduction",
     "section": "Critical Evaluation of Methods",
-    "text": "Critical Evaluation of Methods\n\n\n\n\nAlvarado, Rafael C. 2022. “The 4+1 Model of Data Science.” https://ontoligent.github.io/four-plus-one-model/."
+    "text": "Critical Evaluation of Methods"
+  },
+  {
+    "objectID": "introduction.html#data",
+    "href": "introduction.html#data",
+    "title": "Introduction",
+    "section": "Data",
+    "text": "Data"
+  },
+  {
+    "objectID": "introduction.html#impedance",
+    "href": "introduction.html#impedance",
+    "title": "Introduction",
+    "section": "Impedance",
+    "text": "Impedance"
+  },
+  {
+    "objectID": "introduction.html#transductive-plasma",
+    "href": "introduction.html#transductive-plasma",
+    "title": "Introduction",
+    "section": "Transductive Plasma",
+    "text": "Transductive Plasma\n\n\n\n\nAlvarado, Rafael C. 2022. “The 4+1 Model of Data Science.” https://ontoligent.github.io/four-plus-one-model/.\n\n\nHayles, N. Katherine. 2017. Unthought: The Power of the Cognitive Nonconscious. University of Chicago Press. https://doi.org/10.7208/9780226447919."
   },
   {
     "objectID": "appendix.html",
     "href": "appendix.html",
     "title": "Appendix",
     "section": "",
-    "text": "Appendix\n\n\n\nThe Pipeline of Data Science\n\n\n\n\n\nThe Pipeline as Arc"
+    "text": "Appendix"
+  },
+  {
+    "objectID": "appendix.html#summary-derivation-of-the-41-model-of-data-science",
+    "href": "appendix.html#summary-derivation-of-the-41-model-of-data-science",
+    "title": "Appendix",
+    "section": "Summary Derivation of the 4+1 Model of Data Science",
+    "text": "Summary Derivation of the 4+1 Model of Data Science\n\n\n\nThe Pipeline of Data Science\n\n\n\n\n\nThe Pipeline as Arc"
   }
 ]
