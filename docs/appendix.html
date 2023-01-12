@@ -21,6 +21,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -163,12 +182,15 @@ ul.task-list li input[type="checkbox"] {
 <h1>Appendix</h1>
 <section id="summary-derivation-of-the-41-model-of-data-science" class="level2">
 <h2 class="anchored" data-anchor-id="summary-derivation-of-the-41-model-of-data-science">Summary Derivation of the 4+1 Model of Data Science</h2>
+<p>The image of the data processing pipeline is a commonplace in the literature of data science, data mining, and data analysis. In almost all cases, a pipeline with the following features is either explicitly described or assumed:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="media/ds-pipeline.png" class="img-fluid figure-img" alt="The Pipeline of Data Science"></p>
 <p></p><figcaption class="figure-caption">The Pipeline of Data Science</figcaption><p></p>
 </figure>
 </div>
+<p>Versions of this pipeline differ in the exact events that are described, but all describe a sequence that involves the pre- and post-processing data, along with a middle phase in which the work of modeling and discovery take place. For a full description of the is pipeline, see <span class="citation" data-cites="alvarado2022">Alvarado (<a href="#ref-alvarado2022" role="doc-biblioref">2022</a>)</span>.</p>
+<p>One way of interpreting this model is to view it as an arc, in with the end-points fold back on each other, since both interface with the real world. The image below represents this transformation. The result is that three rough zones of activity emerge: Zone I denotes the input and output of raw data and data products from and to the world. Zone III denotes the primarily mathematical work of analyzing data that has been prepared for modeling. And Zone II denotes the work of preparing data for analysis and the results of analysis for the world. A closer reading of the model shows that Zone II is characterized by a play of two kinds of work — the work of programming, software development, and hardware configuration, and the work of developing forms of representation that mediate between humans and machines.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="media/pipeline-as-arc.png" class="img-fluid figure-img" alt="The Pipeline as Arc"></p>
@@ -177,6 +199,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-alvarado2022" class="csl-entry" role="doc-biblioentry">
+Alvarado, Rafael C. 2022. <span>“The 4+1 Model of Data Science.”</span> <a href="https://ontoligent.github.io/four-plus-one-model/">https://ontoligent.github.io/four-plus-one-model/</a>.
+</div>
+</div>
 </section>
 </section>
 
