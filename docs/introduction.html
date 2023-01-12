@@ -202,8 +202,8 @@ div.csl-indent {
 <table class="table">
 <caption>The Five Areas of Data Science</caption>
 <colgroup>
-<col style="width: 13%">
-<col style="width: 86%">
+<col style="width: 12%">
+<col style="width: 87%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -222,7 +222,7 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td><strong>Design</strong></td>
-<td>Data modeling, ontology making, visualization, data storytelling, etc.</td>
+<td>Data modeling for databases, ontology making, visualization, data storytelling, etc.</td>
 </tr>
 <tr class="even">
 <td><strong>Value</strong></td>
@@ -230,15 +230,15 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td><strong>Practice</strong></td>
-<td>Project management, cross-functional team building, connection to domain knowledge, etc.</td>
+<td>Project management, cross-functional team building, information architecture, connection to domain knowledge, etc.</td>
 </tr>
 </tbody>
 </table>
-<p>These areas are elements of an invariant model derived from the image of the <em>pipeline</em> that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">Appendix</a>).</p>
+<p>These areas are elements of an invariant model derived from the image of the data processing <em>pipeline</em> that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">Appendix</a>).</p>
 </section>
 <section id="design" class="level1">
 <h1>Design</h1>
-<p>Among the areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span class="acronym">HCI</span>), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management, which belongs to systems. Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.</p>
+<p>Among the five areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling for databases (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span class="acronym">HCI</span>), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management (which belong to systems). Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.</p>
 <p>To understand design on its own terms, consider the communicative relationship between humans and computational machines and how this relationship maps onto the pipeline of data science. On the pre-processing side, the work of data science is focused on converting information as captured and understood by humans — for example, in textual or analog form — into forms that can be processed by machines. (We call machine processable information <em>data</em>; more on this below.) On the post-processing side, data science is focused on converting the results of esoteric modeling and analysis into more humanly intelligible forms through the work of visualization and digital storytelling.</p>
 <p>Formally, we may represent these moments as <span class="math inline">\(H \rightarrow M\)</span> and <span class="math inline">\(M \rightarrow H\)</span> (or <span class="math inline">\(H \leftarrow M\)</span>). The following table describes some of the artifacts and practices currently associated with each:</p>
 <table class="table">
@@ -251,9 +251,9 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><u>Visual modeling</u>: E-R diagrams, <a href="https://www.uml.org/">UML</a> (more generally), etc.</p>
+<td><p><u>Visual modeling</u>: E-R diagrams, <a href="https://www.uml.org/">UML</a> diagrams, etc.</p>
 <p><u>Verbal classification</u>: taxonomies and ontologies (e.g.&nbsp;RDF, SKOS, OWL), Knowledge Representation, etc.</p>
-<p><u>Domain-specific models</u>: vector space representations, protein models, text models, etc.</p></td>
+<p><u>Domain-specific models</u>: protein models, text models, etc.</p></td>
 <td><p><u>Interactive visualization</u>: Dashboards, user-facing databases, etc.</p>
 <p><u>Static visualization</u>: infographics, posters, embedded figures and charts, etc.</p>
 <p><u>Digital storytelling</u>: integration of visual and verbal elements into narrative, cinematic, or immersive form, etc.</p>
@@ -261,18 +261,45 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>What is common to these activities? In both cases, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional <em>representation</em> that mediates between cognitive structures of humans and those of machines.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These representations are of two kinds. The first kind are representations of the world to the data scientists and the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e.&nbsp;to non-specialist stakeholders and to users of data products. In both cases, however, the work is focused on a form of representation that mediates between the strict demands of mechanical processing and the more labile requirements of human cognition.</p>
-<p>Given that design is focused on representation, what are some specific characteristics of representation in this context? A full answer to this question is not possible here for two reasons. First, the topic itself is broad and will eventially require volumes for a systematic treatment (as we can expect with any well-developed idea within a body of knowledge). Second, however, as noted the topic is under-theorized. Although some important contributions have been made to the field, especially from the field of <span class="acroynym">HCI</span>, it remains understudied, especially in the uniform manner implied by the 4+1 model of data science. Here we may note the following features shared by both the pre- and post-processing moments of design.</p>
-<ul>
-<li>Formal, e.g.&nbsp;they follow a grammar</li>
-<li>Non-quantitative</li>
-<li>Quasi-logical</li>
-<li>Aesthetic</li>
-<li>Reductive</li>
-<li>Abstract</li>
-<li>Double-voiced: Explicit in the design of SGML (and by descent XML)</li>
-<li>Play: The area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task.</li>
-</ul>
+<p>What is common to these activities? In both moments, the knowledge worker develops and applies a formal language, verbal or visual, to create a functional <em>representation</em> that mediates between cognitive structures of humans and those of machines.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These representations are of two kinds. The first kind are representations of the world, as understood by humans, to the computational and mathematical machinery that will process the represented information. The second kind are representations of the results of mathematical modeling and discovery to the world, i.e.&nbsp;to non-specialist stakeholders and to users of data products. Common to both cases are representations that mediate between the strict demands of mechanical processing and the more labile requirements of human cognition.</p>
+<p>Given the focus of design on representation, what are some specific characteristics of representation in this context? A full answer to this question is not possible here for two reasons. First, the topic itself is broad and will eventually require volumes for a systematic treatment, as we can expect with any well-developed idea within a body of knowledge. Second, and as noted, the topic is under-theorized. Although some important contributions have been made to the field, especially from the field of <span class="acroynym">HCI</span>, it remains understudied, especially in the uniform manner implied by the 4+1 model of data science.</p>
+<p>Here we may note the following features shared by both the pre- and post-processing moments of design.</p>
+<table class="table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 97%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Formal</td>
+<td>Representations in the design space tend to be formal, in the sense of grammar-driven. For example, ER diagrams are constructed using one of many visual grammars. In the area of visualization and communication, representations may follow more or less formal grammars, ranging from the grammar of graphics <span class="citation" data-cites="wilkinson2012 wickham2010">(<a href="#ref-wilkinson2012" role="doc-biblioref">Wilkinson 2012</a>; <a href="#ref-wickham2010" role="doc-biblioref">Wickham 2010</a>)</span> to guidelines and principles <span class="citation" data-cites="tufte2006 tufte1985 tufte1991">(<a href="#ref-tufte2006" role="doc-biblioref">Tufte 2006</a>, <a href="#ref-tufte1985" role="doc-biblioref">1985</a>, <a href="#ref-tufte1991" role="doc-biblioref">1991</a>)</span>. |</td>
+</tr>
+<tr class="even">
+<td>Non-quantitative</td>
+<td>Although formal, typically design grammars are not quantitative per se. They focus on structural patterns and relationships that ground quantitative modeling. Indeed, the work of designing data structures in the pre-processing segment of the pipeline lays the groundwork for measurement-based quantitative reasoning in the modeling phases. Similarly, visualizations of the results of statistical models will translate numerically expressed quantities into qualitatively grasped sensory channels, such as color, size, shape, and position.</td>
+</tr>
+<tr class="odd">
+<td>Logical</td>
+<td>Design grammars are more or less logical, in the sense of making explicit relationships that may be used to make inferences. For example, the relations (i.e.&nbsp;edges) in an ER diagram define the possible propositions that may be constructed from a data set (which are often expressed in <span class="acronym">SQL</span>). Less rigidly, the design of an infographic, such as Minard’s map of Napoleon’s Russian campaign, may suggest causal relations by the judicious positioning of graphical elements <span class="citation" data-cites="mizono2017">(<a href="#ref-mizono2017" role="doc-biblioref">Mizono 2017</a>)</span>.</td>
+</tr>
+<tr class="even">
+<td>Aesthetic</td>
+<td>In place of deductive reasoning, representations of data in the design space often rely on humans’ aesthetic perception and judgement to convey meaning. (Here, aesthetics refers to sensory perception as well as the perception of emergent properties such as beauty.) The reliance of the human brain on visual information is well known, and representations of data exploit this reliance either implicitly or explicitly through the use of elements such as “contrast, balance, emphasis, movement, white space, proportion, hierarchy, repetition, rhythm, pattern, unity, and variety” <span class="citation" data-cites="chapman2018">(<a href="#ref-chapman2018" role="doc-biblioref">Chapman 2018</a>: terms lower-cased)</span>.</td>
+</tr>
+<tr class="odd">
+<td>Reductive</td>
+<td>All representations to be effective must be reduced representations — they select and foreground a small set of features from the high-dimensional space of experience. They are not intended to capture all of reality but a salient subset of reality relevant to a context and a task. As Borges wrote in “Funes the Memorius,” “To think is to forget differences, generalize, make abstractions” <span class="citation" data-cites="borges1964">(<a href="#ref-borges1964" role="doc-biblioref">Borges 1964</a>: p.&nbsp;66)</span>.</td>
+</tr>
+<tr class="even">
+<td>Double-voiced</td>
+<td>Explicit in the design of SGML (and by descent XML)</td>
+</tr>
+<tr class="odd">
+<td>Playful</td>
+<td>The area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task.</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="data-as-representation" class="level1">
 <h1>Data as Representation</h1>
@@ -281,14 +308,14 @@ div.csl-indent {
 <section id="theorization" class="level1">
 <h1>Theorization</h1>
 <ul>
-<li><p>Frye!</p></li>
-<li><p>Licklider</p></li>
-<li><p>Crawford</p></li>
-<li><p>Naur</p></li>
-<li><p>Suchman</p></li>
-<li><p>Zuboff (Informating)</p></li>
-<li><p>Latour</p></li>
-<li><p>Manovich</p></li>
+<li>Frye!</li>
+<li>Licklider</li>
+<li>Crawford</li>
+<li>Naur</li>
+<li>Suchman</li>
+<li>Zuboff (Informating)</li>
+<li>Latour</li>
+<li>Manovich</li>
 </ul>
 </section>
 <section id="digital-humanities" class="level1">
@@ -339,8 +366,32 @@ div.csl-indent {
 <div id="ref-alvarado2022" class="csl-entry" role="doc-biblioentry">
 Alvarado, Rafael C. 2022. <span>“The 4+1 Model of Data Science.”</span> <a href="https://ontoligent.github.io/four-plus-one-model/">https://ontoligent.github.io/four-plus-one-model/</a>.
 </div>
+<div id="ref-borges1964" class="csl-entry" role="doc-biblioentry">
+Borges, Jorge Luis. 1964. <em>Labyrinths: Selected Stories &amp; Other Writings</em>. New Directions Publishing.
+</div>
+<div id="ref-chapman2018" class="csl-entry" role="doc-biblioentry">
+Chapman, Cameron. 2018. <span>“The Principles of Design and Their Importance.”</span> <a href="https://www.toptal.com/designers/ui/principles-of-design">https://www.toptal.com/designers/ui/principles-of-design</a>.
+</div>
 <div id="ref-hayles2017" class="csl-entry" role="doc-biblioentry">
 Hayles, N. Katherine. 2017. <em>Unthought: The Power of the Cognitive Nonconscious</em>. University of Chicago Press. <a href="https://doi.org/10.7208/9780226447919">https://doi.org/10.7208/9780226447919</a>.
+</div>
+<div id="ref-mizono2017" class="csl-entry" role="doc-biblioentry">
+Mizono, Nico. 2017. <span>“What I Learned at Edward Tufte<span>’</span>s One Day Workshop.”</span> <a href="https://medium.com/@NicoMizono/what-i-learned-at-edward-tuftes-one-day-workshop-9e849e6382df">https://medium.com/@NicoMizono/what-i-learned-at-edward-tuftes-one-day-workshop-9e849e6382df</a>.
+</div>
+<div id="ref-tufte1985" class="csl-entry" role="doc-biblioentry">
+Tufte, Edward R. 1985. <span>“The Visual Display of Quantitative Information.”</span> <em>The Journal for Healthcare Quality (JHQ)</em> 7 (3): 15.
+</div>
+<div id="ref-tufte1991" class="csl-entry" role="doc-biblioentry">
+———. 1991. <span>“Envisioning Information.”</span> <em>Optometry and Vision Science</em> 68 (4): 322324.
+</div>
+<div id="ref-tufte2006" class="csl-entry" role="doc-biblioentry">
+———. 2006. <em>Beautiful Evidence</em>. Graphis Pr.
+</div>
+<div id="ref-wickham2010" class="csl-entry" role="doc-biblioentry">
+Wickham, Hadley. 2010. <span>“A Layered Grammar of Graphics.”</span> <em>Journal of Computational and Graphical Statistics</em> 19 (1): 3–28. <a href="https://doi.org/10.1198/jcgs.2009.07098">https://doi.org/10.1198/jcgs.2009.07098</a>.
+</div>
+<div id="ref-wilkinson2012" class="csl-entry" role="doc-biblioentry">
+Wilkinson, Leland. 2012. <span>“The Grammar of Graphics.”</span> In, edited by James E. Gentle, Wolfgang Karl Härdle, and Yuichi Mori, 375–414. Springer Handbooks of Computational Statistics. Berlin, Heidelberg: Springer. <a href="https://doi.org/10.1007/978-3-642-21551-3_13">https://doi.org/10.1007/978-3-642-21551-3_13</a>.
 </div>
 </div>
 </section>
