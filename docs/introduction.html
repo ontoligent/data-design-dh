@@ -147,24 +147,17 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
-  <li><a href="#data-as-representation" id="toc-data-as-representation" class="nav-link" data-scroll-target="#data-as-representation">Data as Representation</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link active" data-scroll-target="#design">Design</a></li>
   <li><a href="#theorization" id="toc-theorization" class="nav-link" data-scroll-target="#theorization">Theorization</a></li>
-  <li><a href="#digital-humanities" id="toc-digital-humanities" class="nav-link" data-scroll-target="#digital-humanities">Digital Humanities</a></li>
-  <li><a href="#areas" id="toc-areas" class="nav-link" data-scroll-target="#areas">Areas</a>
+  <li><a href="#digital-humanities" id="toc-digital-humanities" class="nav-link" data-scroll-target="#digital-humanities">Digital Humanities</a>
   <ul class="collapse">
-  <li><a href="#models-of-text" id="toc-models-of-text" class="nav-link" data-scroll-target="#models-of-text">Models of Text</a></li>
-  <li><a href="#models-and-categories" id="toc-models-and-categories" class="nav-link" data-scroll-target="#models-and-categories">Models and Categories</a></li>
-  <li><a href="#models-of-culture-and-history" id="toc-models-of-culture-and-history" class="nav-link" data-scroll-target="#models-of-culture-and-history">Models of Culture and History</a></li>
-  <li><a href="#visualization-of-cultural-things" id="toc-visualization-of-cultural-things" class="nav-link" data-scroll-target="#visualization-of-cultural-things">Visualization of Cultural Things</a></li>
-  <li><a href="#genres-of-visualization" id="toc-genres-of-visualization" class="nav-link" data-scroll-target="#genres-of-visualization">Genres of Visualization</a></li>
-  <li><a href="#critical-evaluation-of-methods" id="toc-critical-evaluation-of-methods" class="nav-link" data-scroll-target="#critical-evaluation-of-methods">Critical Evaluation of Methods</a></li>
+  <li><a href="#h-rightarrow-m" id="toc-h-rightarrow-m" class="nav-link" data-scroll-target="#h-rightarrow-m"><span class="math inline">\(H \rightarrow M\)</span></a></li>
+  <li><a href="#m-rightarrow-h" id="toc-m-rightarrow-h" class="nav-link" data-scroll-target="#m-rightarrow-h"><span class="math inline">\(M \rightarrow H\)</span></a></li>
   </ul></li>
   <li><a href="#concepts" id="toc-concepts" class="nav-link" data-scroll-target="#concepts">Concepts</a>
   <ul class="collapse">
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
-  <li><a href="#impedance" id="toc-impedance" class="nav-link" data-scroll-target="#impedance">Impedance</a></li>
+  <li><a href="#data-as-representation" id="toc-data-as-representation" class="nav-link" data-scroll-target="#data-as-representation">Data as Representation</a></li>
+  <li><a href="#data-impedance" id="toc-data-impedance" class="nav-link" data-scroll-target="#data-impedance">Data Impedance</a></li>
   <li><a href="#transductive-plasma" id="toc-transductive-plasma" class="nav-link" data-scroll-target="#transductive-plasma">Transductive Plasma</a></li>
   </ul></li>
   </ul>
@@ -196,8 +189,6 @@ div.csl-indent {
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
 <p>The data science body of knowledge (<span class="acronym">DSBOK</span>) may be divided into five broad areas: <span class="keyword">analytics</span>, <span class="keyword">systems</span>, <span class="keyword">design</span>, <span class="keyword">value</span>, and <span class="keyword">practice</span>. The table below gives a sample of activities associated with each area.</p>
 <table class="table">
 <caption>The Five Areas of Data Science</caption>
@@ -235,7 +226,6 @@ div.csl-indent {
 </tbody>
 </table>
 <p>These areas are elements of an invariant model derived from the image of the data processing <em>pipeline</em> that has dominated discourse about the definition of data science since its beginnings in the 1950s. This model is called the 4+1 model of data science. For a theoretical justification and brief historical overview of this model, see <span class="citation" data-cites="alvarado2022">(<a href="#ref-alvarado2022" role="doc-biblioref">Alvarado 2022</a>)</span>. For purposes of this essay, it is helpful to recall that the data science pipeline may be thought of as an <em>arc</em>, in which the pre- and post-processing segments mirror each other and combine to form structural areas (see <a href="appendix.html" title="Appendix">Appendix</a>).</p>
-</section>
 <section id="design" class="level1">
 <h1>Design</h1>
 <p>Among the five areas of data science, the least well understood is design. This area encompasses the knowledge shared by both data modeling for databases (which belongs to the pre-processing segment of the pipeline) and visualization (which belongs to the post-processing segment). Design is most closely associated with the field of human-computer interaction (<span class="acronym">HCI</span>), but also the fields of data modeling for databases and ontology design, which tend to be associated with with database and information management (which belong to systems). Because of these disparate associations, design tends not to be recognized as a separate field. One result of this lack of recognition is the under-theorization of the area.</p>
@@ -296,26 +286,22 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td><strong>Playful</strong></td>
-<td>Finally, the area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task. By play, we mean that there there is always some choice and interpretation involved in choosing and developing a representation, and that this process is not reducible to a mechanical procedure. In other words, producing effective representations in the design space involves is a combination of science and art.</td>
+<td>Finally, the area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task. By play, we mean that there there is always some choice and interpretation involved in developing a representation, and that this process is not reducible to a mechanical procedure. In other words, producing effective representations in the design space involves is a combination of science and art.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="data-as-representation" class="level1">
-<h1>Data as Representation</h1>
-<p>A special case of <span class="math inline">\(H \rightarrow M\)</span> representation is <em>data</em>, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called “structured information,” where structure typically means <em>tabular</em> structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.</p>
-</section>
 <section id="theorization" class="level1">
 <h1>Theorization</h1>
 <ul>
-<li>Frye!</li>
-<li>Licklider</li>
-<li>Crawford</li>
-<li>Naur</li>
-<li>Suchman</li>
-<li>Zuboff (Informating)</li>
-<li>Latour</li>
-<li>Manovich</li>
+<li>Frye — computational information design, a precursor to data science</li>
+<li>Licklider — man-machine symbiosos</li>
+<li>Crawford — what is data?</li>
+<li>Naur — CS is DS</li>
+<li>Suchman — do categories have politics? Plans and Sitauted Action</li>
+<li>Zuboff — Informating</li>
+<li>Latour — Associationism (The Hume Machine)</li>
+<li>Manovich — The Database as Symbolic Form</li>
 </ul>
 </section>
 <section id="digital-humanities" class="level1">
@@ -324,39 +310,38 @@ div.csl-indent {
 <li>Unsworth and KR</li>
 <li>Review of literature in major journals</li>
 </ul>
-</section>
-<section id="areas" class="level1">
-<h1>Areas</h1>
-<section id="models-of-text" class="level2">
-<h2 class="anchored" data-anchor-id="models-of-text">Models of Text</h2>
-</section>
-<section id="models-and-categories" class="level2">
-<h2 class="anchored" data-anchor-id="models-and-categories">Models and Categories</h2>
-</section>
-<section id="models-of-culture-and-history" class="level2">
-<h2 class="anchored" data-anchor-id="models-of-culture-and-history">Models of Culture and History</h2>
+<section id="h-rightarrow-m" class="level2">
+<h2 class="anchored" data-anchor-id="h-rightarrow-m"><span class="math inline">\(H \rightarrow M\)</span></h2>
 <ul>
-<li>Schema</li>
+<li><p>Models of Text</p>
+<ul>
+<li>Text as DAG</li>
+<li>TEI</li>
+</ul></li>
+<li><p>Models of historical process</p>
+<ul>
 <li>HEML</li>
+<li>Other schema (IATH)</li>
+</ul></li>
+<li><p>Categories</p></li>
 </ul>
 </section>
-<section id="visualization-of-cultural-things" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-of-cultural-things">Visualization of Cultural Things</h2>
-</section>
-<section id="genres-of-visualization" class="level2">
-<h2 class="anchored" data-anchor-id="genres-of-visualization">Genres of Visualization</h2>
-</section>
-<section id="critical-evaluation-of-methods" class="level2">
-<h2 class="anchored" data-anchor-id="critical-evaluation-of-methods">Critical Evaluation of Methods</h2>
+<section id="m-rightarrow-h" class="level2">
+<h2 class="anchored" data-anchor-id="m-rightarrow-h"><span class="math inline">\(M \rightarrow H\)</span></h2>
+<ul>
+<li>Network visualization</li>
+<li>Data integration — Space, Time, and Text</li>
+</ul>
 </section>
 </section>
 <section id="concepts" class="level1">
 <h1>Concepts</h1>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data">Data</h2>
+<section id="data-as-representation" class="level2">
+<h2 class="anchored" data-anchor-id="data-as-representation">Data as Representation</h2>
+<p>A special case of <span class="math inline">\(H \rightarrow M\)</span> representation is <em>data</em>, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called “structured information,” where structure typically means <em>tabular</em> structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.</p>
 </section>
-<section id="impedance" class="level2">
-<h2 class="anchored" data-anchor-id="impedance">Impedance</h2>
+<section id="data-impedance" class="level2">
+<h2 class="anchored" data-anchor-id="data-impedance">Data Impedance</h2>
 </section>
 <section id="transductive-plasma" class="level2">
 <h2 class="anchored" data-anchor-id="transductive-plasma">Transductive Plasma</h2>

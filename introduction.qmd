@@ -7,8 +7,6 @@ jupyter: python3
 bibliography: references.bib
 ---
 
-# Introduction
-
 The data science body of knowledge ([DSBOK]{.acronym}) may be divided into five broad areas: [analytics]{.keyword}, [systems]{.keyword}, [design]{.keyword}, [value]{.keyword}, and [practice]{.keyword}. The table below gives a sample of activities associated with each area.
 
 +---------------+--------------------------------------------------------------------------------------------------------------------+
@@ -72,50 +70,50 @@ Here we may note the following features shared by both the pre- and post-process
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Double-voiced**    | Given their role in mediating between human cognition and computational machinery, representations in this space operate along two axes of meaning --- the human and machine. That is, they are often meant to be readable by both humans and machines. This is actually an explicit design goal of SGML (and by descent XML), which was developed to make machine processable text intelligible to humans as well as machines. As Goldfarb, the inventor of SGML says, "XML is a data representation that has the characteristics of a document ... \[you can\] process it as data --- by first parsing it to extract the data --- or you can present it the way you would a document" [@floydConversationCharlesGoldfarb1998]. To be sure, this is not so true in the case of infographics and data stories. Nevertheless, these representations will always contain elements that are directly traceable to mathematical or algorithmic models. |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Playful**          | Finally, the area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task. By play, we mean that there there is always some choice and interpretation involved in choosing and developing a representation, and that this process is not reducible to a mechanical procedure. In other words, producing effective representations in the design space involves is a combination of science and art.                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Playful**          | Finally, the area of design always involves a kind of play, since the formalisms adopted are never the only ones possible for a specific task. By play, we mean that there there is always some choice and interpretation involved in developing a representation, and that this process is not reducible to a mechanical procedure. In other words, producing effective representations in the design space involves is a combination of science and art.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-# Data as Representation
-
-A special case of $H \rightarrow M$ representation is *data*, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called "structured information," where structure typically means *tabular* structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.
 
 # Theorization
 
--   Frye!
--   Licklider
--   Crawford
--   Naur
--   Suchman
--   Zuboff (Informating)
--   Latour
--   Manovich
+-   Frye --- computational information design, a precursor to data science
+-   Licklider --- man-machine symbiosos
+-   Crawford --- what is data?
+-   Naur --- CS is DS
+-   Suchman --- do categories have politics? Plans and Sitauted Action
+-   Zuboff --- Informating
+-   Latour --- Associationism (The Hume Machine)
+-   Manovich --- The Database as Symbolic Form
 
 # Digital Humanities
 
 -   Unsworth and KR
 -   Review of literature in major journals
 
-# Areas
+## $H \rightarrow M$ 
 
-## Models of Text
+-   Models of Text
 
-## Models and Categories
+    -   Text as DAG
+    -   TEI
 
-## Models of Culture and History
+-   Models of historical process
 
--   Schema
--   HEML
+    -   HEML
+    -   Other schema (IATH)
 
-## Visualization of Cultural Things
+-   Categories
 
-## Genres of Visualization
+## $M \rightarrow H$ 
 
-## Critical Evaluation of Methods
+-   Network visualization
+-   Data integration --- Space, Time, and Text
 
 # Concepts
 
-## Data
+## Data as Representation
 
-## Impedance
+A special case of $H \rightarrow M$ representation is *data*, as commonly understood by data scientists and data analysts. Although in general usage the word may take on a wide range of meanings, in practice it refers to what is often called "structured information," where structure typically means *tabular* structure. The content of such tables is typically populated by discrete numbers and categories. It follows that an essential component of design is the literal creation of data, as a form of representation.
+
+## Data Impedance
 
 ## Transductive Plasma
